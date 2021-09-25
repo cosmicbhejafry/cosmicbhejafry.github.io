@@ -195,12 +195,11 @@ document.addEventListener('keyup', function onKeyUp(key) {
 });
 
 // Mouse input
-
 document.addEventListener('pointerup', function onPointerUp(event) {
     if (event.button !== 0) return;
-    if (event.clientX < document.getElementById("zinediv").innerWidth / 2.0) {
+    if (event.clientX < document.window.innerWidth / 2.0) {
         flipRight();
-    } else if(event.clientX < document.getElementById("zinediv").innerWidth) {
+    } else {
         flipLeft();
     }
 }); 

@@ -191,6 +191,19 @@
     </item>
     
     <item>
+      <title>publications</title>
+      <link>https://cosmicbhejafry.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cosmicbhejafry.github.io/publications/</guid>
+      <description>Examining forms of inductive bias towards &amp;lsquo;simplicity&amp;rsquo; in genetic algorithms to enhance evolvability of boolean functions in Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO), France, July 2021 as a short paper
+Links: poster; paper; talk; email me if you want access to the code
+Authors: Hetvi Jethwani, Sumeet Agarwal
+DOI:https://doi.org/10.1145/3449726.3459429
+  Parkinson’s Disease Detection using Imputed Multimodal Datasets in the 16th Women in Machine Learning Workshop co-located with NeurIPS, Australia, December 2021 as an extended-abstract</description>
+    </item>
+    
+    <item>
       <title>Quizzing &amp; everything else</title>
       <link>https://cosmicbhejafry.github.io/misclinks/extracurriculars/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

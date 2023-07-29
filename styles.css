@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* Set the image position to absolute, so we can freely move it around */
+img {
+    position: absolute;
+    width:100px;
+    height:100px;
+  }
+
+/* styles.css */
+
+/* Set the font-family for the entire webpage */
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0; /* Remove default body margin */
+  height: 100vh; /* Set the body height to fill the viewport */
+}
+
+/* Create a flex container for the 2-column layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%; /* Set the container height to fill the body height */
+}
+
+/* Styles for the first column containing header and about */
+.left-column {
+  flex: 1; /* Take up available space in the first column */
+  max-width: 400px; /* Limit the width of the first column */
+  padding: 20px;
+  background-color: #f7f7f7;
+  min-height: 100vh; 
+  /* height: 100%; Set the column height to fill the container height */
+  overflow: auto; /* Add scroll if content overflows */
+}
+
+/* Customize the header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Customize the about me section styles */
+#about {
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  font-size: 24px;
+}
+
+#about p {
+  font-size: 16px;
+}
+
+/* Styles for the second column as a pink-colored block */
+.right-column {
+  /* flex: 1; Take up available space in the second column */
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: #ff69b4; /* Pink color */
+  /* height: 100%; Set the column height to fill the container height */
+  min-height: 100vh; 
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+#sketch-canvas {
+  border: 2px solid black; /* Add a black border to make the canvas visible */
+  width: 20%; /* Set the width of the canvas */
+  height: 20%; /* Set the height of the canvas */
+}

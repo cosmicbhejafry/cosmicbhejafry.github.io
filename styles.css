@@ -19,17 +19,20 @@ body {
 /* Create a flex container for the 2-column layout */
 .container {
   display: flex;
-  flex-wrap: wrap;
-  height: 100%; /* Set the container height to fill the body height */
+  flex-flow: row wrap;
+  height: 100%; 
 }
 
 /* Styles for the first column containing header and about */
 .left-column {
+/* .right-column { */
   flex: 1; /* Take up available space in the first column */
   max-width: 400px; /* Limit the width of the first column */
   padding: 20px;
   background-color: #f7f7f7;
-  min-height: 100vh; 
+  order:1;
+
+  /* min-height: 100vh;  */
   /* height: 100%; Set the column height to fill the container height */
   overflow: auto; /* Add scroll if content overflows */
 }
@@ -63,19 +66,22 @@ header p {
 
 /* Styles for the second column as a pink-colored block */
 .right-column {
-  /* flex: 1; Take up available space in the second column */
-  flex-grow: 1;
-  flex-basis: 0;
+/* .left-column { */
   background-color: #ff69b4; /* Pink color */
-  /* height: 100%; Set the column height to fill the container height */
-  min-height: 100vh; 
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  display: flex; 
+  flex:1 auto;
+  flex-grow: 1;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* gap:5px; */
 }
 
-#sketch-canvas {
-  border: 2px solid black; /* Add a black border to make the canvas visible */
-  width: 20%; /* Set the width of the canvas */
-  height: 20%; /* Set the height of the canvas */
+/* Styles for the gallery items */
+.flex-gallery-item {
+  flex: 1;
+  flex:200px;
+  padding: 20px;
+  margin:5px;
+  background-color: #d44e4e; /* White background for each item */
 }

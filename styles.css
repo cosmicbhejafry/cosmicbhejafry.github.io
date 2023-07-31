@@ -3,8 +3,6 @@
 /* Set the image position to absolute, so we can freely move it around */
 img {
     position: absolute;
-    width:100px;
-    height:100px;
   }
 
 /* styles.css */
@@ -27,10 +25,10 @@ body {
 .left-column {
 /* .right-column { */
   flex: 1; /* Take up available space in the first column */
-  max-width: 400px; /* Limit the width of the first column */
+  /* max-width: 400px; Limit the width of the first column */
   padding: 20px;
   background-color: #f7f7f7;
-  order:1;
+  order:0;
 
   /* min-height: 100vh;  */
   /* height: 100%; Set the column height to fill the container height */
@@ -84,4 +82,12 @@ header p {
   padding: 20px;
   margin:5px;
   background-color: #d44e4e; /* White background for each item */
+}
+
+.flex-gallery-item img {
+  /* max-width: 100%;
+  height: auto; */
+  position: relative;
+  width: 100%; height: auto; 
+  min-width: 0;
 }

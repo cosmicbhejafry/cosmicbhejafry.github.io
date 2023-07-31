@@ -42,11 +42,13 @@ header {
 }
 
 header h1 {
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: calc(32px + 0.390625vw);
 }
 
 header p {
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: calc(18px + 0.390625vw);
 }
 
 /* Customize the about me section styles */
@@ -55,11 +57,13 @@ header p {
 }
 
 #about h2 {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: calc(24px + 0.390625vw);
 }
 
 #about p {
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: calc(16px + 0.390625vw);
 }
 
 /* Styles for the second column as a pink-colored block */

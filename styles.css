@@ -85,7 +85,7 @@ header p {
   flex:200px;
   padding: 20px;
   margin:5px;
-  background-color: #d44e4e; /* White background for each item */
+  background-color: #fffff0; /* White background for each item */
 }
 
 .flex-gallery-item img {
@@ -94,4 +94,9 @@ header p {
   position: relative;
   width: 100%; height: auto; 
   min-width: 0;
+}
+
+.flex-gallery-item p {
+  /* font-size: 16px; */
+  font-size: calc(14px + 0.390625vw);
 }

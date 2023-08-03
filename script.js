@@ -43,18 +43,13 @@ function getRandomNumber(min, max) {
     moveImageRandomly();
   });
   
-  // Define an array of image URLs or filenames
-const imageList = [
-  "path/to/image1.jpg",
-  "path/to/image2.jpg",
-  "path/to/image3.jpg",
-];
-
 const colorList = ["#e2bbfd","#f9eb97","#d3d3d3","#a8d9f6","#F8C8DC"];
 
 // Function to get a random image URL from the imageList array
 function getRandomImage() {
-  return imageList[~~(Math.random() * imageList.length)];
+  const numImg = 3;
+  // console.log("./galleryitem_images/face" + Math.floor((Math.random() * numImg)).toString() + ".svg");
+  return "./galleryitem_images/face" + Math.floor((Math.random() * numImg)).toString() + ".svg"
 }
 
 // Function to generate a random color in hexadecimal format

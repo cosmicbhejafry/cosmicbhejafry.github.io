@@ -27,7 +27,7 @@ body {
   flex: 1; /* Take up available space in the first column */
   /* max-width: 400px; Limit the width of the first column */
   padding: 20px;
-  background-color: #eea6fe;
+  background-color: #fdfafd;
   order:0;
 
   /* min-height: 100vh;  */
@@ -69,7 +69,7 @@ header p {
 /* Styles for the second column as a pink-colored block */
 .right-column {
 /* .left-column { */
-  background-color: #eea6fe; /* Pink color */
+  background-color: #fdfafd; /* Pink color */
   display: flex; 
   flex:1 auto;
   flex-grow: 1;
@@ -85,7 +85,7 @@ header p {
   flex:200px;
   padding: 20px;
   margin:5px;
-  background-color: #fffff0; /* White background for each item */
+  background-color: #fcfcc9;
 }
 
 .flex-gallery-item img {

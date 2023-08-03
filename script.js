@@ -43,3 +43,33 @@ function getRandomNumber(min, max) {
     moveImageRandomly();
   });
   
+  // Define an array of image URLs or filenames
+const imageList = [
+  "path/to/image1.jpg",
+  "path/to/image2.jpg",
+  "path/to/image3.jpg",
+];
+
+const colorList = ["#e2bbfd","#f9eb97","#d3d3d3","#a8d9f6","#F8C8DC"];
+
+// Function to get a random image URL from the imageList array
+function getRandomImage() {
+  return imageList[~~(Math.random() * imageList.length)];
+}
+
+// Function to generate a random color in hexadecimal format
+function getRandomColor() {
+  return colorList[~~(Math.random() * colorList.length)];
+}
+
+// Get all the gallery items on the page
+const galleryItems = document.querySelectorAll(".flex-gallery-item");
+
+// Loop through each gallery item and set a random image and background color to it
+galleryItems.forEach((item) => {
+  const imgElement = item.querySelector("img");
+  imgElement.src = getRandomImage();
+
+  const randomColor = getRandomColor();
+  item.style.backgroundColor = randomColor;
+});

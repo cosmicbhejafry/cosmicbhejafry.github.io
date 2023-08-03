@@ -27,7 +27,7 @@ body {
   flex: 1; /* Take up available space in the first column */
   /* max-width: 400px; Limit the width of the first column */
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: #ff69b4;
   order:0;
 
   /* min-height: 100vh;  */

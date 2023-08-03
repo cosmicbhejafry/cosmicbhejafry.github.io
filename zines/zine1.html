@@ -37,7 +37,8 @@
             margin: 0;
             list-style: none;
             position: absolute;
-            top: 0;
+            /* top: 0; */
+            top:2px;
             right: 0;
             left: 0;
             bottom: 0;
@@ -112,7 +113,10 @@
 <body>
     <noscript>This electric zine requires javascript to be enabled.</noscript>
     <div id="loading">loading zine...</div>
-    <script src="./EZMreader/ezmreader.js" id="zine" base-url='./zine1/' ext-val='.png'></script>
+    <!-- // CARD AMOUNT is (tot_num_pgs/2) -->
+    <!-- <script src="./EZMreader/ezmreader.js" id="zine" base-url='./testzine/' ext-val='.png' template=9 card-amount=6></script> -->
+
+    <script src="./EZMreader/ezmreader.js" id="zine" base-url='./testzine_svg/' ext-val='.svg' template=9 card-amount=4></script>
     <div class="footer">2-sided zine about the 1947 partition, made for theurduproject</div>
 </body>
 </html>

@@ -16,7 +16,14 @@
 */
 
 //---- USER OPTIONS ----//
-const TEMPLATE = 1; // Change this value to set the template
+var TEMPLATE_tmp; // Change this value to set the template
+if(document.getElementById("zine").hasAttribute("template")){
+    TEMPLATE_tmp=document.getElementById("zine").getAttribute("template");
+} else{
+    TEMPLATE_tmp=1;
+}
+const TEMPLATE = parseInt(TEMPLATE_tmp);
+console.log(TEMPLATE);
 /*  
     Available templates:
     
@@ -41,6 +48,7 @@ const TEMPLATE = 1; // Change this value to set the template
         Mini-Mini-Booklet
     8: 64 pages
         Micro
+    9: custom template for inserting extra pages as required
 */
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
 const ALT = 'Reader for Electric Zine Maker'; // Change this to a plaintext copy or description of your content to make it visible to screen-readers
@@ -84,6 +92,9 @@ function getTextures(num) {
 }
 
 // Select template
+// GET TEXTURES INPUT NUMBER is (tot_num_pgs - 3)
+// CARD AMOUNT is (tot_num_pgs/2)
+// can specify card amount as x, then get_textures input is 2x-3
 switch (TEMPLATE) {
     default:
     case 1:
@@ -118,6 +129,11 @@ switch (TEMPLATE) {
         card_amount = 32;
         textures = getTextures(61);
         break;
+    case 9:
+        card_amount = parseInt(document.getElementById("zine").getAttribute("card-amount"));
+        textures = getTextures(parseInt(2*card_amount)-3);
+        console.log(textures);
+        break;    
 }
 
 // Preloader

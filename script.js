@@ -31,12 +31,12 @@ function getRandomNumber(min, max) {
   }
   
   // Move the image to a random position when the page loads
-  document.addEventListener('DOMContentLoaded', () => {
-    moveImageRandomly();
+  // document.addEventListener('DOMContentLoaded', () => {
+    // moveImageRandomly();
   
     // Call moveImageRandomly() every 10 seconds
-    setInterval(moveImageRandomly, 10000);
-  });
+    // setInterval(moveImageRandomly, 10000);
+  // });
   
   // Move the image to a random position when the window is resized
   window.addEventListener('resize', () => {
@@ -47,7 +47,7 @@ const colorList = ["#e2bbfd","#f9eb97","#d3d3d3","#a8d9f6","#F8C8DC"];
 
 // Function to get a random image URL from the imageList array
 function getRandomImage() {
-  const numImg = 3;
+  const numImg = 7;
   // console.log("./galleryitem_images/face" + Math.floor((Math.random() * numImg)).toString() + ".svg");
   return "./galleryitem_images/face" + Math.floor((Math.random() * numImg)).toString() + ".svg"
 }
